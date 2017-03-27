@@ -71,4 +71,15 @@ psh
   pop removes and returns the last element of an array
   push add an element of list to the end of an array
  shift and unshift operators
-
+ Interpolating arrays into strings
+  @ interpolates
+  watch out for email addresses - use '   '
+ foreach control structure
+  step through a list of values, executing one iteration for each value
+  foreach $rock (qw/ slate limestone quartz /){
+    print "One rock is $rock.\n"; # Prints rock names again and again
+   }
+  the control variable actually IS the list element - not a copy
+ $_ Perl's favorite default
+ reverse operator
+  

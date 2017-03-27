@@ -82,4 +82,14 @@ psh
   the control variable actually IS the list element - not a copy
  $_ Perl's favorite default
  reverse operator
-  
+  it reverses things like ..
+ sort operator
+## Context?
+ Scalar and List Context
+  something can be a single, scalar value in one case and a list in another
+ Using list-producing expressions in a Scalar context
+ Using scalar-producing expressions in List context
+ Forcing scalar context
+ <STDIN> in list context
+  @lines = <STDIN>;  # returns standard input in list context
+   creates list of each line until EOF (CTRL-D)

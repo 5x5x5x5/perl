@@ -1,0 +1,74 @@
+use csv module
+
+list::util module
+
+text::csv
+
+hash = associative array
+nested list of for loops to unwind a table
+
+version 14 vs 22
+keys to refernce a hash - doesn't work in future versions
+
+unrolled list of pairs allows you to join two hashes
+
+use Data::Dumper
+allows you to pretty print hashes
+
+arrays of hashes forever
+
+hashes are used to check uniqueness - use 'exist' to check without autovivification.
+
+perdata
+perlre
+metacpan
+
+perl -MText::CSV -e 1 - if it doesn't exist then errors abound
+
+psh
+Repl
+psh
+
+## Chapter 2 continued
+ Getting user input
+  <STDIN> - where scalar is expected, reads complete text from line from standard input
+  stop and wait for \n
+ chomp operator
+  removes \n from string.
+  works on scalar string variable
+   chomp($textinput = <STDIN>);
+ while control structure
+  $count = 0;
+  while($count < 10) {
+   $count += 2;
+   print "count is now $count\n"; # gives values 2 4 6 8 10
+  }
+ undef value
+ defined function
+  to tell whether a value is *undef* and not the empty string
+  returns false for undef
+## Lists and Arrays: Chapter 3
+ lists - ordered collection of scalars
+ array - variable that contains a list
+ Accessing elements of arrays
+  $array[0] is the first element 
+ Special array indicies
+  arrays automatically extend to new far-flung elements 
+  last element [-1]
+ List leterals
+  list of csv in parenthesis
+  .. range operator
+  elements of a list literal can be expressions - evaluated each time the literal is used.
+ qw shortcut
+ List assignment
+  too easy to swap variables' values
+  ($cause, $effect) = ($effect, $cause)
+  ($critical_parameter[0], $critical_parameter[1]) = ($critical_parameter[1], $critical_parameter[0])
+  @array  # all of the elements of the array 
+  @rocks = qw/ granite quartz limestone/;
+  list of list possible
+ pop and push operators
+  pop removes and returns the last element of an array
+  push add an element of list to the end of an array
+ shift and unshift operators
+

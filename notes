@@ -40,6 +40,7 @@ psh
 | \n | new line |
 | "" | defines text enclosed as string data |
 
+| **Numeric Operators** |
 |**Operator**|**Name**|**Example**|**Result**|
 |:---:| --- | --- |:---:|
 | + | addition | | |
@@ -48,6 +49,19 @@ psh
 | / | division | | |
 | % | modulus | | |
 | ** | power | | |
+
+| **String Operators** |
+|**Operator**|**Name**|**Example**|**Result**|
+| . | concatenation | `print "ab" . "cd";` | abcd |
+| x | repetition | `print "hi" x 5; | hihihihihi |
+
+**Binary Assignment Operators**
++= -+ *= /= **= .=
+
+**Comparison Operators**
+== eq != ne < lt > gt <= le >= ge
+
+
 
 
 ## Chapter 2 continued
@@ -115,4 +129,5 @@ psh
   @lines = <STDIN>;  # returns standard input in list context
    creates list of each line until EOF (CTR-D)
     chomp(@lines); # to chomp them all at once
+
    

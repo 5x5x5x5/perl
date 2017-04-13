@@ -1,4 +1,4 @@
-
+#!/usr/bin/perl 
 
 Ask for a name - full name entered followed by a return
 Ask for area code - area code entered
@@ -6,22 +6,6 @@ Ask for the phone number - phone number entered
 Loop - keep asking for input until the user enters --DONE-- for the name
 Store all the names and numbers in an array
 Print them out after the input is done
-
-#./program1.pl
-Please enter a name: Alan Dilbert
-What is this person's area code?: 919
-What is this person's phone number?: 555-2371
-
-Please enter a name: Work Life
-What is this person's area code?: 313
-What is this person's phone number?: 555-7777
-
-Please enter a name: --DONE--
-
-Name              	Phone Number
-----------		----------
-Alan Dilbert		(919) 555-2371
-Work Life		(313) 555-7777
 
 1. You should call the program program1.pl.
 2. It doesn't matter if your input questions are the same as.

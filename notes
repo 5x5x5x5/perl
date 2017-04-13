@@ -19,7 +19,7 @@ arrays of hashes forever
 
 hashes are used to check uniqueness - use 'exist' to check without autovivification.
 
-perdata
+perldata
 perlre
 metacpan
 
@@ -28,6 +28,27 @@ perl -MText::CSV -e 1 - if it doesn't exist then errors abound
 psh
 Repl
 psh
+
+## Lesson 1
+#### Syntax Summary
+|**Code**|**Function**|
+| --- |:--- |
+| # | begins a comment line |
+| #! | she-bang, a directive |
+| print | prints to standard output (usually screen) |
+| ; | every Perl statement ends in a semicolon |
+| \n | new line |
+| "" | defines text enclosed as string data |
+
+|**Operator**|**Name**|**Example**|**Result**|
+|:---:| --- | --- |:---:|
+| + | addition | | |
+| - | subtraction | | |
+| * | multiplication | | |
+| / | division | | |
+| % | modulus | | |
+| ** | power | | |
+
 
 ## Chapter 2 continued
  Getting user input
@@ -92,4 +113,6 @@ psh
  Forcing scalar context
  <STDIN> in list context
   @lines = <STDIN>;  # returns standard input in list context
-   creates list of each line until EOF (CTRL-D)
+   creates list of each line until EOF (CTR-D)
+    chomp(@lines); # to chomp them all at once
+   

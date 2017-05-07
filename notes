@@ -19,7 +19,7 @@ arrays of hashes forever
 
 hashes are used to check uniqueness - use 'exist' to check without autovivification.
 
-perdata
+perldata
 perlre
 metacpan
 
@@ -28,6 +28,41 @@ perl -MText::CSV -e 1 - if it doesn't exist then errors abound
 psh
 Repl
 psh
+
+## Lesson 1
+#### Syntax Summary
+|**Code**|**Function**|
+| --- |:--- |
+| # | begins a comment line |
+| #! | she-bang, a directive |
+| print | prints to standard output (usually screen) |
+| ; | every Perl statement ends in a semicolon |
+| \n | new line |
+| "" | defines text enclosed as string data |
+
+| **Numeric Operators** |
+|**Operator**|**Name**|**Example**|**Result**|
+|:---:| --- | --- |:---:|
+| + | addition | | |
+| - | subtraction | | |
+| * | multiplication | | |
+| / | division | | |
+| % | modulus | | |
+| ** | power | | |
+
+| **String Operators** |
+|**Operator**|**Name**|**Example**|**Result**|
+| . | concatenation | `print "ab" . "cd";` | abcd |
+| x | repetition | `print "hi" x 5; | hihihihihi |
+
+**Binary Assignment Operators**
++= -+ *= /= **= .=
+
+**Comparison Operators**
+== eq != ne < lt > gt <= le >= ge
+
+
+
 
 ## Chapter 2 continued
  Getting user input
@@ -82,4 +117,17 @@ psh
   the control variable actually IS the list element - not a copy
  $_ Perl's favorite default
  reverse operator
-  
+  it reverses things like ..
+ sort operator
+## Context?
+ Scalar and List Context
+  something can be a single, scalar value in one case and a list in another
+ Using list-producing expressions in a Scalar context
+ Using scalar-producing expressions in List context
+ Forcing scalar context
+ <STDIN> in list context
+  @lines = <STDIN>;  # returns standard input in list context
+   creates list of each line until EOF (CTR-D)
+    chomp(@lines); # to chomp them all at once
+
+   

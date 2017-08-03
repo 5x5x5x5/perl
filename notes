@@ -130,4 +130,28 @@ psh
    creates list of each line until EOF (CTR-D)
     chomp(@lines); # to chomp them all at once
 
-   
+ Matt is talking about Modules
+metacpan!!
+
+text::CSV
+$line =~ 's/\r?\n/'
+
+cpanratings
+
+Getopt::Long 
+
+find and find2perl
+
+cwd
+List::Util
+List::MoreUtils
+local::lib - make environment at the command line
+Storable - data serialization - just not XML - YAML is good
+EA.pm
+ea db
+DBI
+Batch.pm <- batch.cgi fro
+
+
+perlmonks.org 
+

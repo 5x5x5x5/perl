@@ -1,0 +1,20 @@
+perl print and execute
+perl -p -e
+i.backup   # makes the change - print change to copy and rename copy to original # additional flag needed to keep original
+
+tee
+
+diff
+:
+rename command
+
+powerful commands - use in noexec mode until it works as intended
+
+` backtick - older style
+$()  parameter passing
+
+for x in $(perl -p -e 's/seq'  *clipped*);do echo $x;done
+
+for loops are good for doing broad searches
+
+D710_50l	0	EA-Pool_04_L8.D710_504_1.fastq.gz	EA-Pool_04_L8.D710_504_2.fastq.gz
